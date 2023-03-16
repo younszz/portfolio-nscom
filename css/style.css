@@ -1,0 +1,108 @@
+#wrap {width: 100%; min-width: 1600px;}
+.inner {width: 1374px; margin: auto; box-sizing: border-box; position: relative;}
+
+#header {width: 100%;}
+#header .bg {content: ""; display: block; width: 100%; height: 0; background: #fff; position: absolute; left: 0; top: 78px; z-index: 190; opacity: 0.7;}
+#header .inner {display: flex; height: 78px; justify-content: space-between; align-items: center; z-index: 200;}
+#header h1 {}
+#header .nav {}
+#header .nav .gnb {display: flex;}
+#header .nav .gnb >li {margin-left: 80px;}
+#header .nav .gnb >li:first-child {margin-left: 0;}
+#header .nav .gnb >li.on >a {color: #E60012;}
+#header .nav .gnb >li a {font-size: 18px; font-weight: 600;}
+#header .nav .gnb >li ul {position: absolute; top: 100%; padding-top: 30px;}
+#header .nav .gnb >li ul li {margin-bottom: 10px;}
+#header .nav .gnb >li ul li a {font-size: 16px; font-weight: 500;}
+
+
+#header .top-menu {display: flex;}
+#header .top-menu li {margin-right: 26px; cursor: pointer;}
+#header .top-menu li:last-child {margin-right: 0;}
+#header .top-menu li i {font-size: 20px;}
+#header .top-menu li.lang {position: relative; height: 100%}
+#header .top-menu li.lang ul {position: absolute; left: -10px; top: 100%; border-radius: 12px; background: #E60012; height: 72px; display: none;}
+#header .top-menu li.lang ul li {margin-right: 0;}
+#header .top-menu li.lang ul li a {display: block; box-sizing: border-box; padding: 5px 10px; color: #fff;}
+
+#visual {width: 100%; position: relative; overflow: hidden; background: radial-gradient(circle, rgba(255,253,227,1) 30%, rgba(243, 236, 182, 1) 100%);}
+#visual .inner {height: 754px;}
+#visual .product::before {content: ""; width: 415px; height: 415px; background: #fff; display: block; border-radius: 50%; position: absolute; left: 0; top: 92px; z-index: 100;}
+#visual .product img {position: absolute; left: 0px; top: 92px; z-index: 110; transition: 0.3s;}
+#visual .product img:hover {transform: scale(1.1)}
+#visual .model {position: absolute; left: 0; top: 0;}
+#visual .visual-text li {position: absolute; right: 0; top: 50%; transform: translateY(-50%); text-align: right;}
+#visual .visual-text li h2 {font-size: 35px; font-weight: 700; line-height: 42px; letter-spacing: -0.875px; margin-bottom: 16px;}
+#visual .visual-text li p {font-size: 18px; line-height: 26px; letter-spacing: -0.45px; margin-bottom: 34px;}
+#visual .visual-text li p.more {font-size: 16px; letter-spacing: -0.32px;}
+#visual .visual-text li p.more a {width: 150px; height: 45px; display: inline-block; background: #000; color: #fff; text-align: center; line-height: 45px;}
+#visual .paging {display: flex; position: absolute; left: 50%; bottom: 32px}
+#visual .paging li {width: 16px; height: 16px; border-radius: 8px; background: rgba(80, 80, 80, 0.5); margin-right: 35px; cursor: pointer;}
+#visual .paging li:last-child {margin-right: 0;}
+#visual .paging li.on  {width: 32px; background: #fff;}
+
+#container {width: 100%;}
+#content {width: 100%;}
+
+.main .inner {padding: 104px 0;}
+.main .con h2 {font-size: 35px; letter-spacing: -0.45px; line-height: 35px; font-weight: 600;}
+.main .con h2 + span {font-size: 18px; letter-spacing: -1.5; line-height: 18px; margin-top: 23px; display: block; margin-bottom: 47px;}
+
+.main .news .more {position: absolute; right: 0; top: 110px;}
+.main .news .news-list li {display: flex; position: relative; height: 165px; border-top: 1px solid #d9d9d9;}
+.main .news .news-list li:last-child {border-bottom: 1px solid #d9d9d9;}
+.main .news .news-list li a {width: 100%;}
+.main .news .news-list li a .date {font-size: 18px; position: absolute; left: 27px; top: 50%; transform: translateY(-50%);}
+.main .news .news-list li a .date > span {display: block; font-size: 35px; line-height: 1.2;}
+.main .news .news-list li a .news-title {font-size: 25px; position: absolute; left: 135px; top: 50%; transform: translateY(-50%);}
+.main .news .news-list li a .news-title span {display: block; font-size: 18px; color: #E60012;}
+.main .news .news-list li a .news-img {position: absolute; right: 0; top: 50%; transform: translateY(-50%);}
+
+.main .project {overflow: hidden; background: #f1f1f1;}
+.main .project .inner {}
+.main .project .project-list {display: flex;}
+.main .project .project-list li {margin-right: 30px;}
+.main .project .project-list li a .project-img {position: relative;}
+.main .project .project-list li a .project-img .color {width: 100%; height: 100%; background: rgba(0, 0, 0, 0.4); position: absolute; left: 0; top: 0; display: block; margin-top: 0; opacity: 0; transition: 0.3s;}
+.main .project .project-list li a .project-img:hover .color {opacity: 1;}
+
+.main .project .project-list li a span {display: block; line-height: 1; margin-top: 30px; margin-bottom: 16px; font-size: 18px; font-weight: 300; color: #E60012;}
+.main .project .project-list li a strong {font-size: 25px; line-height: 1;}
+
+.main .project .btn-wrap {}
+.main .project .btn-wrap .btn {position: absolute; top: 50%; width: 45px; height: 45px; background: rgba(255,255,255,0.5); border-radius: 50%; text-align: center;}
+.main .project .btn-wrap .btn i {font-size: 20px; line-height: 45px;}
+.main .project .btn-wrap .prev {left: 30px;}
+.main .project .btn-wrap .next {right: 30px;}
+
+.main .contact {}
+.main .contact .inner {display: flex; justify-content: space-between;}
+
+.main .contact .left h2 {margin-bottom: 30px;}
+.main .contact .left .addr p {font-size: 16px; margin-bottom: 10px;}
+.main .contact .left .addr p i {font-size: 22px; vertical-align: middle; margin-right: 7px;}
+.main .contact .right {position: relative;}
+.main .contact .right form p {margin-bottom: 20px; display: flex; justify-content: space-between;}
+.main .contact .right form p select {width: 325px; height: 50px; outline: none; padding: 15px; border: 1px solid #dcdcdc;}
+.main .contact .right form p input[type=text] {width: 325px; height: 45px; background: transparent; box-sizing: border-box; outline: none; padding: 0 15px; border: 1px solid #dcdcdc;}
+.main .contact .right form p textarea {width: 672px; background: transparent; box-sizing: border-box; height: 130px; padding: 15px; outline: none; border: 1px solid #dcdcdc;}
+.main .contact .right form input[type=submit] {display: block; width: 672px; height: 50px; border: none; background: #E60012; color: #fff; box-sizing: border-box; border-radius: 25px;}
+
+#footer {width: 100%; background: #4B515F;}
+#footer .inner {height: 208px; padding: 55px 0; display: flex; justify-content: space-between;}
+
+#footer .f-left p {color: #f5f5f5; font-size: 16px; line-height: 23px; font-weight: 300;}
+#footer .f-left p:first-child {margin-bottom: 27px;}
+#footer .f-left p a {color: #f5f5f5;}
+#footer .f-left p a::after {content: ""; display: inline-block; width: 1px; height: 10px; background: #f5f5f5; margin: 0 18px; }
+#footer .f-left p a:last-of-type::after {display: none; vertical-align: middle;}
+#footer .f-right .lang {position: absolute; right: 0; top: 55px;}
+#footer .f-right .lang a {color: #f5f5f5; margin-left: 16px;}
+#footer .f-right .lang a:first-child::after {content: ""; display: inline-block; width: 1px; height: 10px; background: #f5f5f5; margin-left: 16px;}
+#footer .f-right .family {width: 200px; height: 40px; position: relative; top: 55px;}
+#footer .f-right .family a {display: block; height: 40px; line-height: 40px; box-sizing: border-box; padding: 0 15px;}
+#footer .f-right .family a.title {border: 1px solid #333; border-radius: 20px; background: #fff;}
+#footer .f-right .family .title {display: flex; justify-content: space-between; align-items: center;}
+#footer .f-right .family ul {position: absolute; left: 0; bottom: 40px; width: 100%; height: 0px; border: 1px solid #4B515F; border-radius: 20px; background: #fff; overflow: hidden; transition: 0.4s;}
+#footer .f-right .family ul.on {height: 200px;}
+#footer .f-right .family ul li a:hover {background: #f5f5f5;}
